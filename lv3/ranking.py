@@ -30,7 +30,7 @@ def solution(n, results):
     answer = 0
     for i in range(1, n + 1):
         wins[i] = list(set(wins[i]))    # TODO: why needs this line???
-        loses[i] = list(set(loses[i]))
+        loses[i] = list(set(loses[i]))  # TODO: why needs this line???
 
         if len(wins[i]) + len(loses[i]) == n-1:
             answer += 1
